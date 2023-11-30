@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Geliştiriliyor... | iklde.com</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="https://freeman.lol/assets/img/logo.png">
+ 
+    <meta name="description" content="Freeman Enterprises 2023 | Bu site yapım aşamasındadır. iklde.com">
+    <meta name="googlebot" content="noindex,nofollow">
+
+</head>
+
+<body>
+  <!-- Explanation in JS tab -->
+
+<!-- The two texts -->
+<div id="container">
+	<span id="text1"></span>
+	<span id="text2"></span>
+</div>
+
+<!-- The SVG filter used to create the merging effect -->
+<svg id="filters">
+	<defs>
+		<filter id="threshold">
+			<!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+			<feColorMatrix in="SourceGraphic"
+					type="matrix"
+					values="1 0 0 0 0
+									0 1 0 0 0
+									0 0 1 0 0
+									0 0 0 255 -140" />
+		</filter>
+	</defs>
+</svg>
+
+
+<div class="footer">
+  <a href="https://iklde.com/demo2">demo</a>
+  <br>
+  <a href="https://freeman.lol">freeman.lol</a>
+</div>
+
+
+  <script src="script.js"></script>
